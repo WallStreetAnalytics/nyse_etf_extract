@@ -1,0 +1,15 @@
+{
+    "url": "https://www.nyse.com/api/quotes/filter",
+    "headers": {
+        "accept": "*/*",
+        "accept-language": "en-US,en;q=0.9",
+        "content-type": "application/json",
+        "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "cookie": "__cfduid=d0893c80bed50b7fd4662b1623315456b1617853508; ICE=!mFuvxXARLrhl4AKQmW/NR4Un8KL87DoZLdYWY76VCCCzHZ4/beES5/u+1YZrCI2f3LMuPIzMniA1zw==; ICE_notification=445974026.56681.0000; TS01ebd031=0100e6d4950286c9b07471d5e120d11d459bef5164ce6312c43d7da8920f8666e6105b5fb6786113a98c03db59962406e08eeb47702bc481a3c9578d2170f98000cb39c5a1"
+    },
+    "body": "{\"instrumentType\":\"EXCHANGE_TRADED_FUND\",\"pageNumber\":1,\"sortColumn\":\"NORMALIZED_TICKER\",\"sortOrder\":\"ASC\",\"maxResultsPerPage\":10000,\"filterToken\":\"\"}"
+}
