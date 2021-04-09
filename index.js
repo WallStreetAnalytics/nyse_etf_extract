@@ -4,7 +4,7 @@ import etfObject from './Modules/etfRequestObject.json';
 
 async function flowControl() {
     let response = await postRequest(etfObject);
-    console.log(response);
+    //console.log(response);
 
 }
 

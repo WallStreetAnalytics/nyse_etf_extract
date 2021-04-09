@@ -6,5 +6,5 @@ message ETF{
 }
 
 message ETFs{
-    repeated ETF ETFs = 1;
+    repeated ETF etfs = 1;
 }
