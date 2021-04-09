@@ -1,4 +1,4 @@
-const etfs = require("../Protos/etfs_pb");
+const Schema = require("../Protos/etfs_pb");
 
 let test = [ { total: 2559, 
     url: 'https://www.nyse.com/quote/ARCX:AAA', 
@@ -25591,18 +25591,16 @@ let test = [ { total: 2559, 
     instrumentName: 'PROSHARES TRUST II ULTRASHORT SILVER NEW 2011 NEW', 
     micCode: 'ARCX' } ]
 function etfJsonToProtobufs(array){
-
+    const etfs = new Schema.ETFs();
     array.forEach(object =>{
         console.log(object);
-        let newObject = {
-            "ticker" : object.symbolTicker,
-            "name": object.instrumentName
-        }
 
-        let etf = new etfs.ETF();
+        let etf = new Schema.ETF();
         
-        JsonFormat.parser().merge(newObject, etfs);
-        console.log(objects);
+        etf.setTicker(object.symbolTicker);
+        etf.setName(object.instrumentName);
+
+        etfs.add(etf);
         throw("stop");
     });
 }
