@@ -17,7 +17,7 @@ def get_tickers():
     all_tickers = []
 
     page_number = 1
-    per_page = 300
+    per_page = 3000
     while (True):
         body = {
             "instrumentType": "EXCHANGE_TRADED_FUND",
