@@ -1,0 +1,12 @@
+{
+  "name": "nyse_etf_extract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "avsc": "^5.6.2",
+    "axios": "^0.21.1",
+    "papaparse": "^5.3.0",
+    "yargs": "^16.2.0"
+  }
+}
